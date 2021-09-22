@@ -120,8 +120,9 @@ ul {
 .productText {
   text-align: center;
   font-size: 1rem;
-  padding-left: 15rem;
-  padding-right: 15rem;
+  line-height: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   display: inline-block;
 }
 
