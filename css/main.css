@@ -1,136 +1,176 @@
-/* MAD9013 Exercise 
+/* 
+MAD9013 Exercise 
 Author: Jasper Jiaqian Sun
-Date Created: Sept 10, 2021 / Last modified: Sept 19, 2021
+Date Created: Sept 10, 2021 / Last modified: Oct 1, 2021 
 */
 
-/* set webpage font  */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 html {
   font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-/* remove white space */
-body {
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+ul {
   margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
 }
 
-/* Hero Banner background image style */
-.hero {
+/* banner basic styling */
+.banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #f3f6f5;
+}
+
+/* hero banner */
+.banner-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/banners/hero-home.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  padding-top: 10rem;
-  padding-right: 2rem;
-  padding-bottom: 10rem;
-  padding-left: 2rem;
+  padding: 10rem 2rem;
 }
 
-/* Call to Action Banner background image style */
-.cTa {
+/* hero banner title */
+.hero-title {
+  font-size: 2rem;
+  /* font-weight: normal; */
+}
+/* hero banner contents */
+.hero-content {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+/* cta banner */
+.banner-cta {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/banners/soccer-banner-bw.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  padding-top: 5rem;
-  padding-right: 2rem;
-  padding-bottom: 5rem;
-  padding-left: 2rem;
+  padding: 5rem 2rem;
 }
 
-/* buttons layout */
+/* uppercase cta banner title */
+/* .banner-cta > h2 {
+  text-transform: uppercase;
+} */
+
+/* cta banner content */
+.cta-content {
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 2rem;
+}
+
+/* button basic styling */
 .btn {
   border-radius: 2rem;
   padding: 1rem 3rem;
   font-size: 1.5rem;
   text-decoration: none;
+  display: inline-block;
 }
 
-/* button - hero banner */
-.signUp1 {
+/* hero button */
+.btn-hero {
   color: #09a38c;
   border: solid 2px #09a38c;
-  display: inline-block;
+}
+.btn-hero:hover,
+.btn-hero:focus {
+  color: #f3f6f5;
+  background-color: #09a38c;
 }
 
-/* button - Call to action banner */
-.signUp2 {
+/*  Call to action button */
+.btn-cta {
   color: #f3f6f5;
   border: solid 2px #f3f6f5;
-  display: inline-block;
+}
+.btn-cta:hover,
+.btn-cta:focus {
+  color: #09a38c;
+  background-color: #f3f6f5;
 }
 
-/* capitalized the h2 */
-.caps {
+/* product intro*/
+.product {
+  margin: auto;
+  display: block;
+  max-width: 40rem;
+  text-align: center;
+}
+
+/* intro title  */
+.product > h2 {
+  font-size: 1.5rem;
+  /* font-weight: normal;
+  text-transform: uppercase; */
+}
+
+/* intro content */
+.product > p {
+  font-size: 1.2rem;
+  padding: 0rem 2rem;
+  line-height: 2rem;
+}
+
+/* Week 4: Type Hierarchy */
+h1,
+h2,
+h4,
+h6 {
   text-transform: uppercase;
 }
 
-/* hero banner heading text style */
-.heroTitle {
-  font-size: 2rem;
+h1,
+h2,
+h6 {
   font-weight: normal;
-  text-align: center;
-  color: #f3f6f5;
-}
-/* hero banner text style */
-.heroText {
-  font-size: 1.5rem;
-  text-align: center;
-  color: #f3f6f5;
-  line-height: 2rem;
 }
 
-/* call to action banner text style */
-.callText {
-  font-size: 1.5rem;
-  font-weight: normal;
+h1 {
+  color: #066051;
   text-align: center;
-  color: #f3f6f5;
-  line-height: 2rem;
+  font-size: 2.086rem;
 }
 
-/* Last modified: Sept 21, 2021 */
-/* week 4 */
-
-/* remove list dots */
-ul {
-  padding: 0;
+h2 {
+  font-size: 1.859rem;
 }
 
-/* product intro */
-.product {
-  text-align: center;
+h3 {
+  font-weight: bold;
+  font-size: 1.628rem;
 }
 
-/* product title style  */
-.productTitle {
-  font-size: 1.5rem;
-  font-weight: normal;
-  text-align: center;
-  color: black;
-  display: inline-block;
+h4 {
+  font-size: 1.44rem;
 }
 
-/* product intro texts */
-.productText {
-  text-align: center;
+h5 {
+  color: #066051;
+  font-size: 1.2rem;
+  padding-bottom: 2px;
+  border-bottom: 0.5px solid #ddd;
+}
+
+.lorem {
+  color: #045d4f;
   font-size: 1rem;
-  line-height: 2rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  display: inline-block;
 }
 
-/* laptop image */
-.laptop {
-  max-width: 80%;
-  height: auto;
-  position: center;
-  object-fit: cover;
-  display: inline-block;
+h6 {
+  font-size: 1rem;
 }
