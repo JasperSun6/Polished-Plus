@@ -67,6 +67,7 @@ header::after {
   clear: both;
 }
 
+/* header container */
 .header {
   width: 100%;
   max-width: 80%;
@@ -75,6 +76,7 @@ header::after {
   padding-bottom: 4rem;
 }
 
+/* header-logo */
 .header-logo {
   width: 10rem;
   margin-top: 1rem;
@@ -82,13 +84,20 @@ header::after {
   float: left;
 }
 
-.nav-item {
-  text-align: center;
+.header-left {
+  float: left;
+}
+.header-right {
+  float: right;
 }
 
 /* remove list dots */
 .nav-item ul {
   list-style-type: none;
+}
+
+.nav-item {
+  text-align: center;
 }
 
 .nav-item li {
@@ -100,17 +109,10 @@ header::after {
 .nav-item a {
   text-decoration: none;
 }
-.header-left {
-  float: left;
-}
-.header-right {
-  float: right;
-}
 
 .btn-header {
   padding: 0.5rem 2rem;
   font-size: 1rem;
-  text-decoration: none;
   color: #09a38c;
   border: solid 2px #09a38c;
 }
@@ -168,7 +170,7 @@ header::after {
   background-color: #f3f6f5;
 }
 
-/* logos list styling */
+/* logos list styling - temp */
 .logo {
   text-align: center;
   padding-top: 2rem;
@@ -197,7 +199,7 @@ header::after {
   max-width: 70%;
 }
 
-/* light-green background */
+/* first footer - lightGreen */
 .light-footer {
   padding: 2rem 12rem;
   background-color: #066051;
@@ -209,11 +211,10 @@ header::after {
   color: white;
 }
 
-/* footer signUp button */
+/* footer button */
 .btn-footer {
   padding: 0.5rem 2rem;
   font-size: 1rem;
-  text-decoration: none;
   color: #f3f6f5;
   border: solid 2px #f3f6f5;
   float: right;
@@ -224,28 +225,30 @@ header::after {
   background-color: #f3f6f5;
 }
 
-/* dark-green background */
+/* second footer - darkGreen */
 .dark-footer {
   padding: 1rem 1rem;
   background-color: #05483d;
 }
-/* remove list dots */
+
 .dark-footer ul {
   list-style-type: none;
   padding-right: 10rem;
 }
-/* remove link underline */
+
 .dark-footer a {
-  text-decoration: none;
   color: white;
 }
+
 .dark-footer small {
   color: white;
   margin-left: 10rem;
 }
+
 .footer-nav {
   float: right;
 }
+
 .footer-nav li {
   display: inline-block;
   padding-right: 1.5rem;
@@ -335,12 +338,13 @@ a {
     font-size: 1.125rem;
   }
 
-  /* header */
+  /* header 360px scale */
   .header {
     width: auto;
     margin: 0;
     padding-bottom: 5.5rem;
   }
+
   .header h1 {
     margin-bottom: 0;
   }
@@ -356,19 +360,22 @@ a {
     line-height: 2.5rem;
   }
 
-  /* footer */
+  /* footer 360px scale */
   footer {
     text-align: center;
     display: inline-block;
   }
+
   .logo-footer {
     padding-bottom: 2rem;
   }
+
   .light-footer {
     width: 100%;
     padding: 1.5rem 0;
     display: inline-block;
   }
+
   .btn-footer {
     margin-right: 7.5rem;
   }
@@ -376,9 +383,11 @@ a {
   .footer-nav {
     padding: 0.5rem 0 0 0;
   }
+
   .dark-footer {
     display: inline-block;
   }
+
   .dark-footer ul {
     list-style-type: none;
     padding-right: 1rem;
