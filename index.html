@@ -1,7 +1,7 @@
 <!-- 
 MAD9013 Exercise 
 Author: Jasper Jiaqian Sun
-Date Created: Sept 8, 2021 / Last modified: Sept 30, 2021
+Date Created: Sept 8, 2021 / Last modified: Oct 8, 2021
 -->
 
 <!DOCTYPE html>
@@ -13,38 +13,41 @@ Date Created: Sept 8, 2021 / Last modified: Sept 30, 2021
     <link rel="stylesheet" href="css/main.css" />
     <title>Polished+</title>
   </head>
+
   <body>
-    <!-- HEADER  -->
     <header>
-      <h1>
-        <a href="index.html">
+      <div class="header">
+        <h1>
           <img
-            src="images/logos/logo-polished-color.svg"
-            alt="logo-polished-color"
+            class="header-logo"
+            src="./images/logos/logo-polished-color.svg"
+            alt="Polished logo in
+          green."
           />
-        </a>
-      </h1>
-      <!-- Nav Items -->
-      <nav>
-        <ul class="nav-item">
-          <li><a href="#">Platform Tour</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Sign In</a></li>
-          <li><a href="#">Sign Up</a></li>
-        </ul>
-      </nav>
+        </h1>
+        <nav class="nav-item">
+          <ul>
+            <span class="header-left">
+              <li><a href="#">Platform Tour</a></li>
+              <li><a href="#">Pricing</a></li>
+            </span>
+            <span class="header-right">
+              <li><a href="#">Sign In</a></li>
+              <li><a class="btn btn-header" href="#">Sign Up</a></li>
+            </span>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <!-- MAIN -->
+
     <main>
-      <!-- Hero Banner  -->
       <section class="banner banner-hero">
         <h2 class="hero-title">Community Feel. Professional Look.</h2>
-        <p class="hero-content">
+        <p class="container-text hero-content">
           Create your team’s new look with our simple, fast brand builder.
         </p>
         <a href="#" class="btn btn-hero">Sign Up</a>
       </section>
-      <!-- Logo Bar -->
       <section class="logo">
         <ul>
           <li><img src="images/logos/logo-ns.svg" alt="logo-ns" /></li>
@@ -53,10 +56,9 @@ Date Created: Sept 8, 2021 / Last modified: Sept 30, 2021
           <li><img src="images/logos/logo-met.svg" alt="logo-met" /></li>
         </ul>
       </section>
-      <!-- Product Intro -->
-      <section class="product">
-        <h2>Design your brand from top to bottom.</h2>
-        <p>
+      <section class="container product">
+        <h2 class="container-text">Design your brand from top to bottom.</h2>
+        <p class="container-text">
           With the Polished brand builder, you can create any asset your team
           could need. From logos, to jerseys, to merchandise, to advertisements.
           With simple templates, a variety of pre-designed elements,and an easy
@@ -65,7 +67,6 @@ Date Created: Sept 8, 2021 / Last modified: Sept 30, 2021
         </p>
         <img src="images/product/laptop-platform.png" alt="laptop-platform" />
       </section>
-      <!-- Call to Action Banner -->
       <section class="banner banner-cta">
         <h2 class="cta-content">
           Join now and take your team to the next level.
@@ -73,20 +74,29 @@ Date Created: Sept 8, 2021 / Last modified: Sept 30, 2021
         <a href="#" class="btn btn-cta">Sign Up</a>
       </section>
     </main>
+
     <!-- FOOTER  -->
-    <footer class="footer">
-      <a href="index.html">
+    <footer class="light-footer">
+      <a class="logo-footer" href="index.html">
         <img
+          class="logo-footer"
           src="images/logos/logo-polished-white.svg"
           alt="logo-polished-white"
         />
       </a>
-      <a href="#">Sign Up</a>
+      <a class="btn btn-footer" href="#">Sign Up</a>
+    </footer>
+
+    <footer class="dark-footer">
       <small>&copy; 2021 Algonquin College</small>
-      <ul>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
-      </ul>
+      <div class="footer-nav">
+        <nav>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>
