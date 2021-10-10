@@ -29,3 +29,15 @@ Total: 4.5/5
 - `.lorem` style should be applied to all `a` tags
 - You should create a basic reusable `.container` class like we did in the class tutorial to apply consistent content width and centering.
   - You should then create a modifier class for the `.container` to make a narrow `.container-text` to insure a more readable line-length.
+
+## Week 5 ----------------------
+
+Code Quality: 1/3
+Design: .5/1
+File Organization & Commits: 1/1
+Total: 2.5/5
+
+Part 1 incomplete.
+
+Part 2:
+- The font scale in the `28em` media query should be applied as the default style with no media query.
