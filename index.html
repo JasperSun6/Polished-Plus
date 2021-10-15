@@ -1,7 +1,7 @@
 <!-- 
 MAD9013 Exercise 
 Author: Jasper Jiaqian Sun
-Date Created: Sept 8, 2021 / Last modified: Oct 8, 2021
+Date Created: Sept 8, 2021 / Last modified: Oct 14, 2021
 -->
 
 <!DOCTYPE html>
@@ -16,7 +16,8 @@ Date Created: Sept 8, 2021 / Last modified: Oct 8, 2021
   <body>
     <!-- HEADER -->
     <header>
-      <div class="header">
+      <div class="navbar">
+        <div class="header-left">
         <h1>
           <img
             class="header-logo"
@@ -27,20 +28,22 @@ Date Created: Sept 8, 2021 / Last modified: Oct 8, 2021
         </h1>
         <nav class="nav-item">
           <ul>
-            <span class="header-left">
               <li><a href="#">Platform Tour</a></li>
               <li><a href="#">Pricing</a></li>
-            </span>
-            <span class="header-right">
+              </nav>
+            </div>
+            <div class="header-right">
+              <nav class="nav-item nav-right">
               <li><a href="#">Sign In</a></li>
-              <li><a class="btn btn-header" href="#">Sign Up</a></li>
-            </span>
+              <li><a class="btn btn-nav" href="#">Sign Up</a></li>
+              </nav>
+            </div>
           </ul>
-        </nav>
       </div>
     </header>
-    <!-- HERO BANNER  -->
+
     <main>
+      <!-- HERO BANNER  -->
       <section class="banner banner-hero">
         <h2 class="hero-title">Community Feel. Professional Look.</h2>
         <p class="container-text hero-content">
@@ -48,6 +51,7 @@ Date Created: Sept 8, 2021 / Last modified: Oct 8, 2021
         </p>
         <a href="#" class="btn btn-hero">Sign Up</a>
       </section>
+
       <!-- LOGOS -->
       <section class="logo">
         <ul>
@@ -57,6 +61,7 @@ Date Created: Sept 8, 2021 / Last modified: Oct 8, 2021
           <li><img src="images/logos/logo-met.svg" alt="logo-met" /></li>
         </ul>
       </section>
+
       <!-- PRODUCT INTRO -->
       <section class="container product">
         <h2 class="container-text">Design your brand from top to bottom.</h2>
@@ -69,6 +74,7 @@ Date Created: Sept 8, 2021 / Last modified: Oct 8, 2021
         </p>
         <img src="images/product/laptop-platform.png" alt="laptop-platform" />
       </section>
+
       <!-- CALL TO ACTION BANNER -->
       <section class="banner banner-cta">
         <h2 class="cta-content">
@@ -77,21 +83,21 @@ Date Created: Sept 8, 2021 / Last modified: Oct 8, 2021
         <a href="#" class="btn btn-cta">Sign Up</a>
       </section>
     </main>
-    <!--  FOOTER LIGHT  -->
-    <footer class="light-footer">
-      <a class="logo-footer" href="index.html">
-        <img
-          class="logo-footer"
-          src="images/logos/logo-polished-white.svg"
-          alt="logo-polished-white"
-        />
-      </a>
-      <a class="btn btn-footer" href="#">Sign Up</a>
-    </footer>
-    <!-- FOOTER DARK  -->
-    <footer class="dark-footer">
-      <small>&copy; 2021 Algonquin College</small>
-      <div class="footer-nav">
+
+    <footer>
+      <!-- FOOTER - LightGreen -->
+      <div class="footer-light">
+        <a class="logo-footer" href="index.html">
+          <img
+            src="images/logos/logo-polished-white.svg"
+            alt="logo-polished-white"
+          />
+        </a>
+        <a class="btn btn-footer" href="#">Sign Up</a>
+      </div>
+      <!-- FOOTER - DarkGreen -->
+      <div class="footer-dark">
+        <small>&copy; 2021 Algonquin College</small>
         <nav>
           <ul>
             <li><a href="#">Privacy Policy</a></li>
