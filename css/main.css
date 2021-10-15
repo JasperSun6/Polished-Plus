@@ -1,7 +1,7 @@
 /* 
 MAD9013 Exercise 
 Author: Jasper Jiaqian Sun
-Date Created: Sept 10, 2021 / Last modified: Oct 14, 2021 
+Date Created: Sept 10, 2021 / Last modified: Oct 15, 2021 
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
@@ -185,16 +185,15 @@ a {
 }
 
 /* logos styling */
-.logo {
-  text-align: center;
-}
 .logo ul {
-  padding: 1em 3rem 6rem 3rem;
+  display: flex;
   flex-direction: column;
+  justify-content: space-around;
   list-style-type: none;
 }
 .logo li {
-  padding: 1rem 0;
+  width: 100%;
+  padding: 1rem 1rem;
 }
 
 /* product intro styling */
@@ -344,21 +343,14 @@ small {
   }
 
   /* logos styling  */
-  .logo {
+  .logo ul {
     display: flex;
-    flex-direction: column;
-    margin: 1rem;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 
-  .logo ul,
   .logo li {
-    padding: 0;
-    display: unset;
-  }
-
-  .logo img {
-    width: 45%;
-    padding: 0 2rem;
+    width: 40%;
   }
 
   /* footer - lightGreen */
@@ -410,18 +402,14 @@ small {
     flex-direction: row;
     max-width: 80vw;
     margin: auto;
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
   }
 
   .logo ul {
-    display: flex;
-    padding: 2rem 5rem;
-    flex-direction: row;
     justify-content: space-around;
-    list-style-type: none;
   }
 
-  .logo img {
-    width: 100%;
+  .logo li {
+    width: 15%;
   }
 }
