@@ -32,12 +32,22 @@ Total: 4.5/5
 
 ## Week 5 ----------------------
 
-Code Quality: 1/3
+Code Quality: 2.25/3
 Design: .5/1
 File Organization & Commits: 1/1
-Total: 2.5/5
+Total: 3.75/5
 
-Part 1 incomplete.
+Your media query for the header and footer is at too small of a screen size. This is causing a wide range of screens to have awkward overlaps of content.
 
 Part 2:
 - The font scale in the `28em` media query should be applied as the default style with no media query.
+
+## Week 6 ----------------------
+
+Code Quality: 2.75/3
+Design: .75/1
+File Organization & Commits: 1/1
+Total: 4.5/5
+
+- Make sure to apply the proper `.container` styles to better contain and align your content!
+  - You used `justify-content: space-around;` in the footer which does a decent job of spacing things out. But combining `.container` with `justify-content: space-between;` will create a more consistent width and edge alignment.
