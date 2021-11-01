@@ -1,7 +1,7 @@
 /* 
 MAD9013 Exercise 
 Author: Jasper Jiaqian Sun
-Date Created: Sept 10, 2021 / Last modified: Oct 29, 2021 
+Date Created: Sept 10, 2021 / Last modified: Oct 31, 2021 
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
@@ -161,7 +161,8 @@ a {
 .banner-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/banners/hero-home.jpg");
-  padding: 10rem 1.5rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .hero-content {
@@ -194,15 +195,12 @@ a {
 }
 
 /* product intro styling */
-.product {
-  padding: 5rem 1rem;
-}
+
 .product h2 {
   font-size: 1.5rem;
 }
 .product p {
   font-size: 1.2rem;
-  padding: 0;
   line-height: 2rem;
 }
 
@@ -210,7 +208,8 @@ a {
 .banner-cta {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/banners/soccer-banner-bw.jpg");
-  padding: 7rem 2.5rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 .cta-content {
   font-size: 1.5rem;
@@ -241,7 +240,8 @@ small {
   flex-direction: column;
   align-items: center;
   row-gap: 2rem;
-  padding: 2rem 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background-color: #066051;
 }
 
@@ -265,7 +265,8 @@ small {
 /* footer - darkGreen */
 .footer-dark {
   text-align: center;
-  padding: 2rem 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background-color: #05483d;
 }
 
@@ -281,7 +282,8 @@ small {
 .banner-platform {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/banners/hero-platform.jpg");
-  padding: 10rem 1.5rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 h3 {
@@ -354,8 +356,8 @@ h3 {
   }
 
   .container {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   /* top navbar styling */
@@ -452,8 +454,8 @@ h3 {
   }
 
   .container {
-    padding-left: 15rem;
-    padding-right: 15rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
   .navbar {
     display: flex;
