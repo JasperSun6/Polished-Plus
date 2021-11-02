@@ -51,3 +51,12 @@ Total: 4.5/5
 
 - Make sure to apply the proper `.container` styles to better contain and align your content!
   - You used `justify-content: space-around;` in the footer which does a decent job of spacing things out. But combining `.container` with `justify-content: space-between;` will create a more consistent width and edge alignment.
+
+## Week 7 ----------------------
+
+Code Quality: 2.75/3
+Design: 1/1
+File Organization & Commits: 1/1
+Total: 4.75/5
+
+Try and be more descriptive with your class names! `.text` and `.text-one` are super generic and don't describe what is happening. Also, it is something that would likely be repeated causing conflicts and bugs!
