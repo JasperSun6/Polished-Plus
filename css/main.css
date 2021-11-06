@@ -1,12 +1,11 @@
 /* 
-MAD9013 Exercise 
+MAD9013 Exercises 
 Author: Jasper Jiaqian Sun
-Date Created: Sept 10, 2021 / Last modified: Oct 31, 2021 
+Date Created: Sept 10, 2021 / Last modified: Nov 2, 2021 
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
-/* font family styling */
 html {
   font-family: "Ubuntu", sans-serif;
   box-sizing: border-box;
@@ -19,31 +18,26 @@ html {
   box-sizing: inherit;
 }
 
-/* basic webpage styling */
 body,
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* image size styling */
 img {
   max-width: 100%;
 }
 
-/* basic container styling */
 .container {
   margin: 0;
   padding: 0 1.25rem;
   text-align: center;
 }
 
-/* basic text styling */
 .container-text {
   width: 100%;
 }
 
-/* basic banner styling */
 .banner {
   background-position: center;
   background-repeat: no-repeat;
@@ -52,7 +46,6 @@ img {
   color: #f3f6f5;
 }
 
-/* basic button styling */
 .btn {
   border-radius: 2rem;
   padding: 1rem 3rem;
@@ -60,67 +53,70 @@ img {
   text-decoration: none;
 }
 
-/* Type Hierarchy */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 1.5rem;
-}
-h1,
-h2,
-h4,
-h6 {
-  text-transform: uppercase;
-}
-h1,
-h2,
-h6 {
-  font-weight: normal;
-}
-
+/*  Base Type Hierarchy */
 h1 {
   color: #066051;
   text-align: center;
-  font-size: 2.086rem;
+  font-size: 1.802rem;
+  font-weight: normal;
+  margin: 0 0 1.5rem;
+  text-transform: uppercase;
 }
 h2 {
-  font-size: 1.859rem;
+  font-size: 1.602rem;
+  font-weight: normal;
+  margin: 0 0 1.5rem;
+  text-transform: uppercase;
 }
 h3 {
   font-weight: bold;
-  font-size: 1.628rem;
+  font-size: 1.424rem;
+  margin: 0 0 1.5rem;
 }
 h4 {
-  font-size: 1.44rem;
+  font-size: 1.266rem;
+  margin: 0 0 1.5rem;
+  text-transform: uppercase;
 }
 h5 {
   color: #066051;
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   padding-bottom: 2px;
+  margin: 0 0 1.5rem;
   border-bottom: 0.5px solid #ddd;
 }
 h6 {
   font-size: 1rem;
+  font-weight: normal;
   margin: 0 0 1.5rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.367rem;
+  line-height: 2rem;
 }
 a {
   color: #045d4f;
 }
+small,
+.text_small {
+  font-size: 0.889rem;
+}
 
+/* --------- MAIN PAGE --------- */
 /* navbar - button */
 .btn-nav {
   padding: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
   font-size: 1rem;
-  color: #09a38c;
-  border: solid 2px #09a38c;
+  color: #045d4f;
+  border: solid 2px #045d4f;
 }
 .btn-nav:hover,
 .btn-nav:focus {
   color: #f3f6f5;
-  background-color: #09a38c;
+  background-color: #045d4f;
 }
 
 /* top navbar styling */
@@ -129,16 +125,16 @@ a {
   padding: 1rem 0;
 }
 
-.navbar h1 {
-  margin-bottom: 0.5rem;
-}
-
 .navbar {
   display: flex;
   text-align: center;
   align-items: center;
   list-style-type: none;
   flex-direction: column;
+}
+
+.navbar h1 {
+  margin-bottom: 0.5rem;
 }
 
 .nav-item li {
@@ -151,10 +147,6 @@ a {
 .nav-item a {
   margin-bottom: 1rem;
   text-decoration: none;
-}
-
-.btn-nav {
-  margin-bottom: 1rem;
 }
 
 /* hero banner */
@@ -194,16 +186,6 @@ a {
   padding: 1rem 1rem;
 }
 
-/* product intro styling */
-
-.product h2 {
-  font-size: 1.5rem;
-}
-.product p {
-  font-size: 1.2rem;
-  line-height: 2rem;
-}
-
 /* call to action banner */
 .banner-cta {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -234,14 +216,14 @@ small {
   color: #f3f6f5;
 }
 
-/* footer - lightGreen */
+/* footer - light */
 .footer-light {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   background-color: #066051;
 }
 
@@ -262,22 +244,23 @@ small {
   background-color: #f3f6f5;
 }
 
-/* footer - darkGreen */
+/* footer - dark */
 .footer-dark {
   text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
   background-color: #05483d;
 }
 
 .footer-dark ul {
   display: flex;
+  gap: 1.5rem;
   padding-top: 1rem;
   justify-content: space-between;
   list-style-type: none;
 }
 
-/* PLATFORM TOUR PAGE */
+/* --------- PLATFORM TOUR PAGE --------- */
 
 .banner-platform {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -297,28 +280,28 @@ h3 {
   grid-template-rows: auto;
 }
 
-.platform .text-one {
+.platform .text-build-logo {
   order: 2;
 }
-.platform .img-one {
+.platform .img-build-logo {
   order: 3;
 }
-.platform .text-two {
+.platform .text-develop-brand {
   order: 4;
 }
-.platform .img-two {
+.platform .img-develop-brand {
   order: 5;
 }
-.platform .text-three {
+.platform .text-see-logo {
   order: 6;
 }
-.platform .img-three {
+.platform .img-see-logo {
   order: 7;
 }
-.platform .text-four {
+.platform .text-print-product {
   order: 8;
 }
-.platform .img-four {
+.platform .img-print-product {
   order: 9;
 }
 
@@ -333,8 +316,112 @@ h3 {
   padding-bottom: 3rem;
 }
 
-/* medium(600px) scale -tablet */
+/* --------- PRICING PAGE --------- */
+table {
+  width: 100%;
+}
+
+.table-scroll {
+  overflow-x: scroll;
+  max-width: 100%;
+}
+
+.table {
+  padding-bottom: 4rem;
+}
+
+.price-table {
+  min-width: 40rem;
+  border-collapse: collapse;
+  overflow: auto;
+}
+
+.price-table th,
+.price-table td {
+  padding: 1.5rem 0;
+}
+
+.table-text {
+  padding: 5rem 0;
+}
+
+tbody .month-fee {
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  display: inline-block;
+  position: relative;
+}
+
+.month-fee::before {
+  content: "$";
+  font-size: 1.5rem;
+  font-weight: normal;
+  position: absolute;
+  top: -0.8rem;
+  left: -0.8rem;
+}
+
+.price-table thead th {
+  font-size: 1.5rem;
+}
+
+.price-table tbody th {
+  text-align: left;
+}
+
+.price-table tbody td {
+  text-align: center;
+}
+
+.price-table tbody tr {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.price-table tbody tr:last-child {
+  border: none;
+}
+
+.price-table tr :nth-child(3) {
+  color: #045d4f;
+  background: #f3f6f4;
+}
+
+.table-signUp td {
+  padding-bottom: 3.5rem;
+}
+
+.price-table tr:last-child p {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.top-radius {
+  border-radius: 15px 15px 0 0;
+}
+
+.bottom-radius {
+  border-radius: 0 0 15px 15px;
+}
+
+.btn-table {
+  padding: 0.6rem 2rem;
+}
+
+.btn-premium {
+  color: #f3f6f5;
+  background: #09a38c;
+  border-color: #09a38c;
+}
+
+.btn-premium:hover,
+.btn-premium:focus {
+  border-color: #045d4f;
+}
+
+/*--------- MEDIUM 600px scale ---------*/
 @media only screen and (min-width: 37.5em) {
+  /*  Medium Type Hierarchy */
   h1 {
     font-size: 2.488rem;
   }
@@ -407,8 +494,7 @@ h3 {
     flex-wrap: wrap;
     flex-direction: row;
   }
-
-  .logo li {
+  ` .logo li {
     width: 40%;
   }
 
@@ -425,14 +511,17 @@ h3 {
     align-items: baseline;
     justify-content: space-between;
   }
-
-  .footer-dark a {
-    padding-right: 1rem;
+}
+/*--------- MEDIUM-LARGE 768px scale ---------*/
+@media only screen and (min-width: 48rem) {
+  .table-scroll {
+    overflow-x: hidden;
   }
 }
 
-/* large(960px) scale - Desktop */
+/*--------- LARGE 960px scale ---------*/
 @media only screen and (min-width: 60em) {
+  /*  Large Type Hierarchy */
   h1 {
     font-size: 3.052rem;
   }
@@ -471,6 +560,7 @@ h3 {
     width: 15%;
   }
 
+  /*--------- Platform Page---------*/
   .platform {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -478,35 +568,40 @@ h3 {
     gap: 5rem;
   }
 
-  .platform .text {
+  .platform .platform-text {
     justify-self: center;
     align-self: center;
   }
   .platform h2 {
     grid-column: 1 / -1;
   }
-  .platform .img-one {
+  .platform .img-build-logo {
     order: 2;
   }
-  .platform .text-one {
+  .platform .text-build-logo {
     order: 3;
   }
-  .platform .text-two {
+  .platform .text-develop-brand {
     order: 4;
   }
-  .platform .img-two {
+  .platform .img-develop-brand {
     order: 5;
   }
-  .platform .img-three {
+  .platform .img-see-logo {
     order: 6;
   }
-  .platform .text-three {
+  .platform .text-see-logo {
     order: 7;
   }
-  .platform .text-four {
+  .platform .text-print-product {
     order: 8;
   }
-  .platform .img-four {
+  .platform .img-print-product {
     order: 9;
+  }
+
+  /*--------- Pricing Page---------*/
+  .table-text p {
+    font-size: 2rem;
   }
 }
