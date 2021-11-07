@@ -60,3 +60,13 @@ File Organization & Commits: 1/1
 Total: 4.75/5
 
 Try and be more descriptive with your class names! `.text` and `.text-one` are super generic and don't describe what is happening. Also, it is something that would likely be repeated causing conflicts and bugs!
+
+## Week 9 ----------------------
+
+Code Quality: 2.5/3
+Design: 1/1
+File Organization & Commits: 1/1
+Total: 4.5/5
+
+- You can only have one `h1` per page, you have two. The "Affordable Pricing for All" heading should be the `h1`
+- The `$` is important text that should be included in the HTML. It marks the numbers as currency. You have used a `::before` which makes it non-readable text, which is inaccessible and removes the important currency context.
