@@ -1,0 +1,88 @@
+<!-- 
+MAD9013 Exercise - platform tour page
+Author: Jasper Jiaqian Sun
+Date Created: Oct 24, 2021 / Last modified: Nov 7, 2021
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="navbar container">
+            <div class="header-left">
+                <a href="index.html">
+                    <img class="header-logo" src="./images/logos/logo-polished-color.svg"
+                        alt="Polished logo in green." />
+                </a>
+                <nav class="nav-item">
+                    <ul>
+                        <li><a href="platform-tour.html">Platform Tour</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                </nav>
+            </div>
+            <div class="header-right">
+                <nav class="nav-item nav-right">
+                    <li><a href="#">Sign In</a></li>
+                    <li><a class="btn btn-nav" href="./sign-up.html">Sign Up</a></li>
+                </nav>
+            </div>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO BANNER  -->
+        <section class="banner banner-signUp container">
+            <!-- SIGN UP FORM  -->
+            <form class="container">
+                <fieldset>
+                    <h1>Sign Up</h1>
+                    <div class="full-name">
+                        <input type="text" id="first-name" name="first-name" placeholder="First Name" required />
+                        <input type="text" id="last-name" name="last-name" placeholder="Last Name" required />
+                    </div>
+                    <input type="email" id="email" name="email" placeholder="Email" required />
+                    <input type="password" id="password" name="password" placeholder="Password" required />
+                    <input type="password" id="password-confirm" name="password-confirm" placeholder="Confirm Password"
+                        required />
+                    <p>I agree to the <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a.< /a>
+                    </p>
+                    <a class="btn btn-signUp" href="./sign-up.html">Submit</a>
+                    <p>Already have an account? <a href="#">Sign In</a></p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- FOOTER - SIGN-UP -->
+        <div class="footer-light container">
+            <a class="logo-footer" href="index.html">
+                <img src="images/logos/logo-polished-white.svg" alt="logo-polished-white" />
+            </a>
+            <a class="btn btn-footer" href="./sign-up.html">Sign Up</a>
+        </div>
+        <!-- FOOTER - SUB -->
+        <div class="footer-dark container">
+            <small>&copy; 2021 Algonquin College</small>
+            <nav>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
