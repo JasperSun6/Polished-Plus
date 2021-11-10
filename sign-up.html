@@ -1,8 +1,6 @@
-<!-- 
-MAD9013 Exercise - platform tour page
+<!-- MAD9013 Exercise - SignUp page
 Author: Jasper Jiaqian Sun
-Date Created: Oct 24, 2021 / Last modified: Nov 7, 2021
--->
+Date Created: Oct 24, 2021 / Last modified: Nov 8, 2021 -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -44,20 +42,29 @@ Date Created: Oct 24, 2021 / Last modified: Nov 7, 2021
         <!-- HERO BANNER  -->
         <section class="banner banner-signUp container">
             <!-- SIGN UP FORM  -->
-            <form class="container">
+            <form action="https://formspree.io/f/mrgrwvkq" method="post" class="container">
                 <fieldset>
                     <h1>Sign Up</h1>
                     <div class="full-name">
-                        <input type="text" id="first-name" name="first-name" placeholder="First Name" required />
-                        <input type="text" id="last-name" name="last-name" placeholder="Last Name" required />
+                        <label for="first-name"></label>
+                        <input type="text" id="first-name" class="first-name" name="first-name" placeholder="First Name"
+                            required />
+                        <label for="last-name"></label>
+                        <input type="text" id="last-name" class="last-name" name="last-name" placeholder="Last Name"
+                            required />
                     </div>
+                    <label for="email"></label>
                     <input type="email" id="email" name="email" placeholder="Email" required />
+                    <label for="password"></label>
                     <input type="password" id="password" name="password" placeholder="Password" required />
+                    <label for="password-confirm"></label>
                     <input type="password" id="password-confirm" name="password-confirm" placeholder="Confirm Password"
                         required />
-                    <p>I agree to the <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a.< /a>
+                    <p>I agree to the
+                        <a href="#">Terms of Service
+                        </a> & <a href="#">Privacy Policy</a>
                     </p>
-                    <a class="btn btn-signUp" href="./sign-up.html">Submit</a>
+                    <button type="submit" class="btn btn-signUp">Submit</button>
                     <p>Already have an account? <a href="#">Sign In</a></p>
                 </fieldset>
             </form>
