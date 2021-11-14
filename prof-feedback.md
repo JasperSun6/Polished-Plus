@@ -70,3 +70,12 @@ Total: 4.5/5
 
 - You can only have one `h1` per page, you have two. The "Affordable Pricing for All" heading should be the `h1`
 - The `$` is important text that should be included in the HTML. It marks the numbers as currency. You have used a `::before` which makes it non-readable text, which is inaccessible and removes the important currency context.
+
+## Week 10 ----------------------
+
+Code Quality: 2.75/3
+Design: 1/1
+File Organization & Commits: 1/1
+Total: 4.75/5
+
+- All `input` need a `label` with text content in it. This is important for accessibility. To visually hide the labels, use the `screen-reader-text` styles discussed in class.
