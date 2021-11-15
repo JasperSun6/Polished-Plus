@@ -453,6 +453,12 @@ form p {
   color: black;
 }
 
+/* Hide label */
+.screen-reader-text {
+  position: absolute;
+  left: 9999rem;
+}
+
 .btn-signUp {
   padding: 0.3rem 1.7rem;
   font-size: 1rem;
