@@ -1,6 +1,6 @@
 <!-- MAD9013 Exercise - SignUp page
 Author: Jasper Jiaqian Sun
-Date Created: Oct 24, 2021 / Last modified: Nov 14, 2021 -->
+Date Created: Oct 24, 2021 / Last modified: Nov 15, 2021 -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,34 +14,43 @@ Date Created: Oct 24, 2021 / Last modified: Nov 14, 2021 -->
 </head>
 
 <body>
+    <!-- SKIP LINKS -->
+    <ul class="skip-links">
+        <li><a href="#nav" aria-label="Skip to main navigation">Skip to main navigation</a></li>
+        <li><a href="#main" aria-label="Skip to main content">Skip to main content</a></li>
+        <li>
+            <a href="#footer" aria-label="Skip to bottom of the page">Skip to bottom of page</a>
+        </li>
+    </ul>
+
     <!-- HEADER -->
     <header>
         <div class="navbar container">
             <div class="header-left">
-                <a href="index.html">
+                <a href="index.html" aria-label="Go to home page">
                     <img class="header-logo" src="./images/logos/logo-polished-color.svg"
                         alt="Polished logo in green." />
                 </a>
-                <nav class="nav-item">
+                <nav class="nav-item" id="nav" role="navigation">
                     <ul>
-                        <li><a href="platform-tour.html">Platform Tour</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="platform-tour.html" aria-label="Go to Platform tour page">Platform Tour</a></li>
+                        <li><a href="pricing.html" aria-label="Go to pricing page">Pricing</a></li>
                 </nav>
             </div>
             <div class="header-right">
                 <nav class="nav-item nav-right">
-                    <li><a href="#">Sign In</a></li>
-                    <li><a class="btn btn-nav" href="./sign-up.html">Sign Up</a></li>
+                    <li><a href="#" aria-label="Go to SignIn page">Sign In</a></li>
+                    <li><a class="btn btn-nav" href="./sign-up.html" aria-label="Go to SignUp page">Sign Up</a></li>
                 </nav>
             </div>
             </ul>
         </div>
     </header>
 
-    <main>
+    <main id="main" role="main">
         <!-- HERO BANNER  -->
-        <section class="banner banner-signUp container">
-            <!-- SIGN UP FORM  -->
+        <section class="banner banner-signUp container" tabindex="0">
+            <!-- SIGN UP FORM -->
             <form action="https://formspree.io/f/mrgrwvkq" method="post" class="container">
                 <fieldset>
                     <h1>Sign Up</h1>
@@ -61,35 +70,37 @@ Date Created: Oct 24, 2021 / Last modified: Nov 14, 2021 -->
                     <input type="password" id="password-confirm" name="password-confirm" placeholder="Confirm Password"
                         required />
                     <p>I agree to the
-                        <a href="#">Terms of Service
-                        </a> & <a href="#">Privacy Policy</a>
+                        <a href="#" aria-label="Go to privacy policy page ">Terms of Service
+                        </a> & <a href="#" aria-label="Go to terms of service page">Privacy Policy</a>
                     </p>
                     <button type="submit" class="btn btn-signUp">Submit</button>
-                    <p>Already have an account? <a href="#">Sign In</a></p>
+                    <p>Already have an account? <a href="#" aria-label="Go to terms of SignUp page">Sign In</a></p>
                 </fieldset>
             </form>
         </section>
     </main>
 
-    <footer>
+    <footer id="footer" role="footer">
         <!-- FOOTER - SIGN-UP -->
         <div class="footer-light container">
-            <a class="logo-footer" href="index.html">
+            <a class="logo-footer" href="index.html" aria-label="Go to home page">
                 <img src="images/logos/logo-polished-white.svg" alt="logo-polished-white" />
             </a>
-            <a class="btn btn-footer" href="./sign-up.html">Sign Up</a>
+            <a class="btn btn-footer" href="./sign-up.html" aria-label="Go to SignUp page">Sign Up</a>
         </div>
         <!-- FOOTER - SUB -->
         <div class="footer-dark container">
             <small>&copy; 2021 Algonquin College</small>
             <nav>
                 <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#" aria-label="Go to privacy policy page">Privacy Policy</a></li>
+                    <li><a href="#" aria-label="Go to terms of service page">Terms of Service</a></li>
+                    <li><a class="to-top" href="#nav" aria-label="Click to scroll to top of webpage">To top</a></li>
                 </ul>
             </nav>
         </div>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

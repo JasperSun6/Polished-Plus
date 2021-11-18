@@ -1,7 +1,7 @@
 <!-- 
 MAD9013 Exercise - platform tour page
 Author: Jasper Jiaqian Sun
-Date Created: Oct 24, 2021 / Last modified: Oct 29, 2021
+Date Created: Oct 24, 2021 / Last modified: Nov 15, 2021
 -->
 
 <!DOCTYPE html>
@@ -16,44 +16,53 @@ Date Created: Oct 24, 2021 / Last modified: Oct 29, 2021
 </head>
 
 <body>
+  <!-- SKIP LINKS -->
+  <ul class="skip-links">
+    <li><a href="#nav" aria-label="Skip to main navigation">Skip to main navigation</a></li>
+    <li><a href="#main" aria-label="Skip to main content">Skip to main content</a></li>
+    <li>
+      <a href="#footer" aria-label="Skip to bottom of the page">Skip to bottom of page</a>
+    </li>
+  </ul>
+
   <!-- HEADER -->
   <header>
     <div class="navbar container">
       <div class="header-left">
         <h1>
-          <a href="index.html">
+          <a href="index.html" aria-label="Go to the homepage">
             <img class="header-logo" src="./images/logos/logo-polished-color.svg" alt="Polished logo in
           green." />
           </a>
         </h1>
-        <nav class="nav-item">
+        <nav class="nav-item" id="nav" role="navigation">
           <ul>
-            <li><a href="platform-tour.html">Platform Tour</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="platform-tour.html" aria-label="Go to platform tour page">Platform Tour</a></li>
+            <li><a href="pricing.html" aria-label="Go to pricing page">Pricing</a></li>
         </nav>
       </div>
       <div class="header-right">
         <nav class="nav-item nav-right">
-          <li><a href="#">Sign In</a></li>
-          <li><a class="btn btn-nav" href="./sign-up.html">Sign Up</a></li>
+          <li><a href="#" aria-label="Go the signIn page">Sign In</a></li>
+          <li><a class="btn btn-nav" href="./sign-up.html" aria-label="Go to signUp page">Sign Up</a></li>
         </nav>
       </div>
       </ul>
     </div>
   </header>
 
-  <main>
+  <main id="main" role="main">
     <!-- HERO BANNER  -->
-    <section class="banner banner-platform container">
+    <section class="banner banner-platform container" tabindex="0">
       <h2 class="hero-title">Next Level Design at Your Fingertips.</h2>
       <p class="container-text hero-content">
         The Polished+ platform makes designing your brand fast and simple.
       </p>
-      <a href="./sign-up.html" class="btn btn-hero">Sign Up</a>
+      <a href="./sign-up.html" class="btn btn-hero" aria-label="Go to SignUp page">Sign Up</a>
     </section>
 
     <!-- PLATFORM TOUR -->
-    <section class="container platform">
+    <section class="container platform" tabindex="0">
       <h2>The Polished+ Platform</h2>
       <img class="img-build-logo" src="images/product/build-your-logo.jpg" alt="build-your-logo">
       <div class="platform-text text-build-logo">
@@ -88,7 +97,7 @@ Date Created: Oct 24, 2021 / Last modified: Oct 29, 2021
     </section>
 
     <!-- PLATFORM INTRO -->
-    <section class="container product">
+    <section class="container product" tabindex="0">
       <h2 class="container-text">A platform like no other.</h2>
       <p class="container-text">
         With the Polished brand builder, you can create any asset your team could need.
@@ -100,7 +109,7 @@ Date Created: Oct 24, 2021 / Last modified: Oct 29, 2021
     </section>
 
     <!-- CALL TO ACTION BANNER -->
-    <section class="banner banner-cta container">
+    <section class="banner banner-cta container" tabindex="0">
       <h2 class="cta-content">
         Join now and take your team to the next level.
       </h2>
@@ -108,25 +117,27 @@ Date Created: Oct 24, 2021 / Last modified: Oct 29, 2021
     </section>
   </main>
 
-  <footer>
+  <footer id="footer" role="footer">
     <!-- FOOTER - SIGN-UP -->
     <div class="footer-light container">
-      <a class="logo-footer" href="index.html">
+      <a class="logo-footer" href="index.html" aria-label="Go to the main page">
         <img src="images/logos/logo-polished-white.svg" alt="logo-polished-white" />
       </a>
-      <a class="btn btn-footer" href="./sign-up.html">Sign Up</a>
+      <a class="btn btn-footer" href="./sign-up.html" aria-label="Go to SignUp page">Sign Up</a>
     </div>
     <!-- FOOTER - SUB -->
     <div class="footer-dark container">
       <small>&copy; 2021 Algonquin College</small>
       <nav>
         <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#" aria-label="Go to privacy policy page">Privacy Policy</a></li>
+          <li><a href="#" aria-label="Go to terms of service page">Terms of Service</a></li>
+          <li><a class="to-top" href="#nav" aria-label="Click to scroll to top of webpage">To top</a></li>
         </ul>
       </nav>
     </div>
   </footer>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

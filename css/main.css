@@ -103,6 +103,55 @@ small,
 .text_small {
   font-size: 0.889rem;
 }
+/* --------- Accessibility --------- */
+
+*:focus {
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+
+.skip-links {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.skip-links a {
+  position: absolute;
+  top: -100rem;
+  display: inline-block;
+  padding: 1rem;
+  background-color: black;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 100000;
+}
+
+.skip-links a:focus {
+  top: 0;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 0;
+  right: 1rem;
+  background-color: #525252;
+  padding: 1rem 0.85rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  text-decoration: none;
+  transform: translateY(100%);
+  transition: background-color 0.3s, color 0.3s, opacity 0.3s, transform 0.3s;
+}
+
+.to-top.visible {
+  transform: none;
+}
+
+.to-top:hover,
+.to-top:focus {
+  background-color: gray;
+}
 
 /* --------- MAIN PAGE --------- */
 /* navbar - button */
@@ -327,6 +376,9 @@ table {
   padding-bottom: 4rem;
 }
 
+.table-header {
+  opacity: 0;
+}
 .price-table {
   min-width: 40rem;
   border-collapse: collapse;
@@ -401,13 +453,14 @@ sup {
 
 .btn-premium {
   color: #f3f6f5;
-  background: #09a38c;
-  border-color: #09a38c;
+  background: #065b4d;
+  border-color: #065b4d;
 }
 
 .btn-premium:hover,
 .btn-premium:focus {
-  border-color: #045d4f;
+  background-color: #09a38c;
+  border-color: #09a38c;
 }
 
 /* --------- SignUp PAGE --------- */
@@ -457,19 +510,20 @@ form p {
 .screen-reader-text {
   position: absolute;
   left: 9999rem;
+  opacity: 0;
 }
 
 .btn-signUp {
   padding: 0.3rem 1.7rem;
   font-size: 1rem;
   color: #f3f6f5;
-  background-color: #09a38c;
-  border: solid 2px #09a38c;
+  background-color: #065b4d;
+  border: solid 2px #065b4d;
 }
 .btn-signUp:hover,
 .btn-signUp:focus {
-  color: #09a38c;
-  background-color: #f3f6f5;
+  background-color: #09a38c;
+  border-color: #09a38c;
 }
 
 /*--------- MEDIUM 600px scale ---------*/
