@@ -40,6 +40,7 @@ Total: 3.75/5
 Your media query for the header and footer is at too small of a screen size. This is causing a wide range of screens to have awkward overlaps of content.
 
 Part 2:
+
 - The font scale in the `28em` media query should be applied as the default style with no media query.
 
 ## Week 6 ----------------------

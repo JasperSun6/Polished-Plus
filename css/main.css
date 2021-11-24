@@ -99,13 +99,20 @@ p {
 a {
   color: #045d4f;
 }
+
 small,
 .text_small {
   font-size: 0.889rem;
 }
+
+a:hover,
+li:hover {
+  transition: 0.5s;
+  color: #09a38c;
+}
 /* --------- Accessibility --------- */
 
-*:focus {
+*:focus-visible {
   outline: 2px solid red;
   outline-offset: 2px;
 }
@@ -215,11 +222,36 @@ small,
 .btn-hero {
   color: #09a38c;
   border: solid 2px #09a38c;
+  transform: translateY(10rem);
+  opacity: 0;
+  animation: slide-up 0.5s 0.9s forwards;
 }
 .btn-hero:hover,
 .btn-hero:focus {
   color: #f3f6f5;
   background-color: #09a38c;
+}
+
+.banner-hero h2 {
+  opacity: 0;
+  animation: slide-up 0.5s 0.5s forwards;
+}
+
+.banner-hero p {
+  opacity: 0;
+  animation: slide-up 0.5s 0.7s forwards;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(10rem);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
 }
 
 /* logos styling */
@@ -268,7 +300,7 @@ small {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 2rem;
+  row-gap: 1.5rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   background-color: #066051;
@@ -291,6 +323,25 @@ small {
   background-color: #f3f6f5;
 }
 
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+svg {
+  width: 1.8rem;
+  height: 2rem;
+  display: block;
+  fill: white;
+}
+
+svg:hover {
+  fill: #09a38c;
+  transition: 0.5s;
+}
+
 /* footer - dark */
 .footer-dark {
   text-align: center;
@@ -301,10 +352,12 @@ small {
 
 .footer-dark ul {
   display: flex;
-  gap: 1.5rem;
-  padding-top: 1rem;
   justify-content: space-between;
   list-style-type: none;
+}
+
+.footer-dark a {
+  padding-left: 1rem;
 }
 
 /* --------- PLATFORM TOUR PAGE --------- */
@@ -313,6 +366,16 @@ small {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/banners/hero-platform.jpg");
   padding: 10rem 0;
+}
+
+.banner-platform h2 {
+  opacity: 0;
+  animation: slide-up 0.5s 0.5s forwards;
+}
+
+.banner-platform p {
+  opacity: 0;
+  animation: slide-up 0.5s 0.7s forwards;
 }
 
 h3 {
@@ -609,6 +672,11 @@ form p {
   .footer-light {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .btn-footer {
+    margin-left: auto;
+    margin-right: 1rem;
   }
 
   /* footer - darkGreen */
