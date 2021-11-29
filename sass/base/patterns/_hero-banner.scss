@@ -1,0 +1,58 @@
+.banner-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/banners/hero-home.jpg");
+  padding: 10rem 0;
+}
+.hero-content {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-bottom: 1rem;
+}
+
+.banner-platform {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/banners/hero-platform.jpg");
+  padding: 10rem 0;
+}
+
+.banner-signUp {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/banners/hockey-goalie.jpg");
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-hero h2 {
+  opacity: 0;
+  animation: slide-up 0.5s 0.5s forwards;
+}
+
+.banner-hero p {
+  opacity: 0;
+  animation: slide-up 0.5s 0.7s forwards;
+}
+
+.banner-platform h2 {
+  opacity: 0;
+  animation: slide-up 0.5s 0.5s forwards;
+}
+
+.banner-platform p {
+  opacity: 0;
+  animation: slide-up 0.5s 0.7s forwards;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(10rem);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}

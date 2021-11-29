@@ -1,0 +1,91 @@
+.btn {
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.btn-nav {
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: var(--color-green-dark);
+  border: solid 2px var(--color-green-dark);
+}
+
+.btn-nav:hover,
+.btn-nav:focus {
+  color: var(--color-beige);
+  background-color: var(--color-green-dark);
+}
+
+.btn-hero {
+  color: var(--color-green-light);
+  border: solid 2px var(--color-green-light);
+  transform: translateY(10rem);
+  opacity: 0;
+  animation: slide-up 0.5s 0.9s forwards;
+}
+.btn-hero:hover,
+.btn-hero:focus {
+  color: var(--color-beige);
+  background-color: var(--color-green-light);
+}
+
+.btn-cta {
+  color: var(--color-beige);
+  border: solid 2px var(--color-beige);
+}
+.btn-cta:hover,
+.btn-cta:focus {
+  color: var(--color-green-light);
+  background-color: var(--color-beige);
+}
+
+.btn-footer {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  color: var(--color-beige);
+  border: solid 2px var(--color-beige);
+}
+.btn-footer:hover,
+.btn-footer:focus {
+  color: var(--color-green-light);
+  background-color: var(--color-beige);
+}
+
+.btn-signUp {
+  padding: 0.3rem 1.7rem;
+  font-size: 1rem;
+  color: var(--color-beige);
+  background-color: var(--color-green-dark);
+  border: solid 2px var(--color-green-dark);
+}
+.btn-signUp:hover,
+.btn-signUp:focus {
+  background-color: var(--color-green-light);
+  border-color: var(--color-green-light);
+}
+
+.btn-table {
+  padding: 0.6rem 2rem;
+}
+
+.btn-premium {
+  color: var(--color-beige);
+  background: var(--color-green-dark);
+  border-color: var(--color-green-dark);
+}
+
+.btn-premium:hover,
+.btn-premium:focus {
+  background-color: var(--color-green-light);
+  border-color: var(--color-green-light);
+}
+
+@media only screen and (min-width: 37.5em) {
+  .btn-footer {
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+}

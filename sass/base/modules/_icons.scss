@@ -1,0 +1,18 @@
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+svg {
+  width: 1.8rem;
+  height: 2rem;
+  display: block;
+  fill: var(--color-white);
+}
+
+svg:hover {
+  fill: var(--color-green-light);
+  transition: 0.5s;
+}

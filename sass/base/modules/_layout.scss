@@ -1,0 +1,23 @@
+.container {
+  margin: 0;
+  text-align: center;
+}
+
+.container-text {
+  width: 100%;
+}
+
+.banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: var(--color-beige);
+}
+
+@media only screen and (min-width: 60em) {
+  .container {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}

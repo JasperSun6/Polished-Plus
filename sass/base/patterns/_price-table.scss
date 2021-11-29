@@ -1,0 +1,95 @@
+table {
+  width: 100%;
+}
+
+.table-scroll {
+  overflow-x: scroll;
+  max-width: 100%;
+}
+
+.table {
+  padding-bottom: 4rem;
+}
+
+.table-header {
+  opacity: 0;
+}
+.price-table {
+  min-width: 40rem;
+  border-collapse: collapse;
+  overflow: auto;
+}
+
+.price-table th,
+.price-table td {
+  padding: 1.5rem 0;
+}
+
+.table-text {
+  padding: 5rem 0;
+}
+
+tbody .month-fee {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+sup {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.price-table thead th {
+  font-size: 1.5rem;
+}
+
+.price-table tbody th {
+  text-align: left;
+}
+
+.price-table tbody td {
+  text-align: center;
+}
+
+.price-table tbody tr {
+  border-bottom: 1px solid var(--color-beige);
+}
+
+.price-table tbody tr:last-child {
+  border: none;
+}
+
+.price-table tr :nth-child(3) {
+  color: var(--color-green-normal);
+  background: var(--color-beige);
+}
+
+.table-signUp td {
+  padding-bottom: 3.5rem;
+}
+
+.price-table tr:last-child p {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.top-radius {
+  border-radius: 15px 15px 0 0;
+}
+
+.bottom-radius {
+  border-radius: 0 0 15px 15px;
+}
+
+@media only screen and (min-width: 48em) {
+  .table-scroll {
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .table-text p {
+    font-size: 2rem;
+  }
+}

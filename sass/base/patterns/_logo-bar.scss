@@ -1,0 +1,31 @@
+.logo ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.logo li {
+  width: 100%;
+  padding: 1rem 1rem;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .logo ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .logo li {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .logo ul {
+    justify-content: space-between;
+  }
+
+  .logo li {
+    width: 15%;
+  }
+}

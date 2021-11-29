@@ -1,0 +1,101 @@
+h1 {
+  color: var(--color-green-dark);
+  text-align: center;
+  font-size: 1.802rem;
+  font-weight: normal;
+  margin: 0 0 1.5rem;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 1.602rem;
+  font-weight: normal;
+  margin: 0 0 1.5rem;
+  text-transform: uppercase;
+}
+h3 {
+  font-weight: bold;
+  font-size: 1.424rem;
+  margin: 0 0 1.5rem;
+  text-align: left;
+}
+h4 {
+  font-size: 1.266rem;
+  margin: 0 0 1.5rem;
+  text-transform: uppercase;
+}
+h5 {
+  color: var(--color-green-dark);
+  font-size: 1.125rem;
+  padding-bottom: 2px;
+  margin: 0 0 1.5rem;
+  border-bottom: 0.5px solid var(--color-light-gray);
+}
+h6 {
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0 0 1.5rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.367rem;
+  line-height: 2rem;
+}
+a {
+  color: var(--color-green-normal);
+}
+
+small,
+.text_small {
+  font-size: 0.889rem;
+}
+
+a:hover,
+li:hover {
+  transition: 0.5s;
+  color: var(--color-green-light);
+}
+
+@media only screen and (min-width: 37.5em) {
+  h1 {
+    font-size: 2.488rem;
+  }
+
+  h2 {
+    font-size: 2.074rem;
+  }
+
+  h3 {
+    font-size: 1.728rem;
+  }
+
+  h4 {
+    font-size: 1.44rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  h1 {
+    font-size: 3.052rem;
+  }
+
+  h2 {
+    font-size: 2.441rem;
+  }
+
+  h3 {
+    font-size: 1.953rem;
+  }
+
+  h4 {
+    font-size: 1.563rem;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+  }
+}
