@@ -90,7 +90,7 @@ Total: 5/5
 
 Great work!
 
-## Week 11 ----------------------
+## Week 12 ----------------------
 
 Code Quality: 3/3
 Design: 1/1
@@ -98,3 +98,11 @@ File Organization & Commits: 1/1
 Total: 5/5
 
 Well done!
+
+## Week 13 ----------------------
+
+Code Quality: 3/3
+File Organization & Commits: 2/2
+Total: /5
+
+You can put the `components` and `modules` folder immediately inside of the `sass` folder. In my tutorial I included the `base` folder to separate the pre-written code from what we were going to make together. Repeating in your own work is not necessary.
